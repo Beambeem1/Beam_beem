@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เว็บหาคู่ของฉัน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>สร้าง / เปลี่ยนบัญชี</h2>
+
+<input type="text" id="username" placeholder="ชื่อบัญชี">
+<button onclick="createUser()">สร้างบัญชี</button>
+<button onclick="switchUser()">เปลี่ยนบัญชี</button>
+
+<p id="currentUser"></p>
+
+<hr>
+
+  <h1>❤️ เว็บหาคู่</h1>
+
+  <div class="form-container">
+    <h2>สมัครสมาชิก</h2>
+    <input type="text" id="name" placeholder="ชื่อ">
+    <input type="number" id="age" placeholder="อายุ">
+    <select id="gender">
+      <option value="">เลือกเพศ</option>
+      <option value="ชาย">ชาย</option>
+      <option value="หญิง">หญิง</option>
+      <option value="LGBTQ+">LGBTQ+</option>
+    </select>
+    <textarea id="bio" placeholder="แนะนำตัว"></textarea>
+    <button onclick="addProfile()">สมัคร</button>
+  </div>
+
+  <hr>
+
+  <h2>โปรไฟล์ทั้งหมด</h2>
+  <div id="profiles" class="profiles"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
